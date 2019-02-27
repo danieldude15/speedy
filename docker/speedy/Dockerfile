@@ -1,4 +1,4 @@
-FROM sammlerio/node
+FROM node
 
 RUN yarn global add nodemon
 

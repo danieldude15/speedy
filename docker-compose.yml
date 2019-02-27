@@ -22,13 +22,10 @@ services:
       - ./configuration.env
     ports:
       - "3001:3001"
-    restart: always
-    volumes:
-      - ./docker/speedy/:/home/
+    restart: unless-stopped
     depends_on:
       - influxdb
     command: ["yarn", "run", "start"]
-
 
 volumes:
   influxdb_data: {}

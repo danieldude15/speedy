@@ -5,7 +5,7 @@ services:
   influxdb:
     extends:
       file: common.yml
-      service: influxdb
+      service: hypriot/influxdb
 
   grafana:
     extends:

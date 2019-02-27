@@ -1,4 +1,4 @@
-FROM influxdb:1.2.0-alpine
+FROM hypriot/rpi-influxdb:1.2.2
 MAINTAINER Stefan Walther <swrnixda@gmail.com>
 
 WORKDIR /app
